@@ -1,5 +1,5 @@
 {
-  "name": "livestore-example-todomvc",
+  "name": "livestore-example-dist-todomvc",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,5 +1,5 @@
 {
-  "name": "livestore-example-todomvc-sync-electric",
+  "name": "livestore-example-dist-todomvc-sync-electric",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,5 +1,5 @@
 {
-  "name": "livestore-example-todomvc-custom-elements",
+  "name": "livestore-example-dist-todomvc-custom-elements",
   "private": true,
   "type": "module",
   "scripts": {
