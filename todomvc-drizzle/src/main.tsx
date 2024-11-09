@@ -4,7 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { registerSW } from 'virtual:pwa-register'
 
-import { App } from './Root.js'
+import { App } from './Root.jsx'
 
 if (import.meta.env.PROD) {
   registerSW()

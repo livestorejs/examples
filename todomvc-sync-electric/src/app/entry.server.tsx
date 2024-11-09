@@ -21,7 +21,8 @@ const handleRequest = (
     </html>
   `
 
-  const appHtml = renderToString(<RemixServer context={remixContext} url={request.url} />)
+  // TODO remove as any cast
+  const appHtml = renderToString(<RemixServer context={remixContext as any} url={request.url} />)
 
   const html = shellHtml.replace('__APP_HTML__', appHtml)
 
