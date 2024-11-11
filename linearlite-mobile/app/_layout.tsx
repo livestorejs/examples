@@ -44,7 +44,7 @@ export default function RootLayout() {
     <LiveStoreProvider
       schema={schema}
       renderLoading={(_) => <LoadingLiveStore stage={_.stage} />}
-      disableDevtools={true}
+      // disableDevtools={true}
       renderError={(error: any) => (
         <View className="flex-1 items-center justify-center">
           <Text>Error: {JSON.stringify(error, null, 2)}</Text>

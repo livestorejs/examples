@@ -10,8 +10,7 @@
     "test": "jest --watchAll",
     "lint": "expo lint",
     "format": "prettier --write .",
-    "postinstall": "patch-package",
-    "nuke": "rm -rf node_modules ios android && yarn install && npx expo prebuild -p ios --clean && yarn ios"
+    "nuke": "rm -rf node_modules ios android && bun install && npx expo prebuild -p ios --clean && bun ios"
   },
   "jest": {
     "preset": "jest-expo"
@@ -28,7 +27,7 @@
     "@react-native/assets-registry": "^0.75.3",
     "@react-navigation/native": "^7.0.0",
     "@shopify/flash-list": "1.7.1",
-    "effect": "^3.10.13",
+    "effect": "3.10.12",
     "expo": "^52.0.0-preview.23",
     "expo-asset": "~11.0.0",
     "expo-build-properties": "~0.13.1",
