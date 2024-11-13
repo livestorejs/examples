@@ -35,7 +35,7 @@ const IssueItem = memo(
     const linkHref = `/issue-details?issueId=${issue.id}`;
 
     return (
-      <Link href={linkHref as LinkProps<String>['href']} asChild>
+      <Link href={linkHref as LinkProps['href']} asChild>
         <Pressable className="flex-row items-center justify-between gap-2 active:bg-zinc-100 dark:active:bg-zinc-800 rounded-md p-2 px-3">
           <View className="w-full flex-1 flex-row items-center justify-between gap-2">
             <View className="flex-row items-center gap-2 flex-shrink">
@@ -55,6 +55,7 @@ const IssueItem = memo(
                 style={{ width: 20, height: 20, borderRadius: 10 }}
                 placeholder={blurhash}
                 transition={500}
+                cachePolicy={'memory-disk'}
               />
             )}
           </View>

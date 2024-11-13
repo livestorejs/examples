@@ -165,7 +165,6 @@ export default function HomeScreen() {
           createdTabGrouping,
           createdTabOrdering,
         )}
-        LIMIT 100
       `,
         {
           schema: Schema.Any,
@@ -223,8 +222,7 @@ export default function HomeScreen() {
     () => (
       <View className="px-3">
         <ThemedText type="subtitle">
-          Engineering
-          {/* Engineering {`${issuesCount} issues`} */}
+          Engineering {`${issuesCount} issues`}
         </ThemedText>
         <SegmentedControl
           values={homeTabs}
