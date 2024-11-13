@@ -9,6 +9,7 @@ import SegmentedControl from '@react-native-segmented-control/segmented-control'
 import { updateSelectedHomeTab } from '@/schema/mutations';
 import { useUser } from '@/hooks/useUser';
 import { useCallback, useMemo } from 'react';
+import { FlashList } from '@shopify/flash-list';
 
 const homeTabs = ['Assigned', 'Created'];
 // For reference
@@ -240,13 +241,12 @@ export default function HomeScreen() {
   );
 
   return (
-    <FlatList
+    <FlashList
       data={issues}
       renderItem={renderItem}
       contentContainerClassName="gap-1 px-2"
       keyExtractor={(item) => item.id.toString()}
-      initialNumToRender={100}
-      maxToRenderPerBatch={100}
+      estimatedItemSize={300}
       ListHeaderComponent={ListHeaderComponent}
     />
   );
