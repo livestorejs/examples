@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "linearlite-mobile",
-    "slug": "linearlite-mobile",
+    "slug": "linearlite-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -61,15 +61,18 @@
     },
     "extra": {
       "eas": {
-        "projectId": "44ced8d2-79ed-4207-ad1d-1764585dc46c"
+        "projectId": "fa9bf858-2af3-4d4f-9658-4b2422d9bafc"
+      },
+      "router": {
+        "origin": false
       }
     },
-    "owner": "expo-dev-success",
+    "owner": "betoatexpo",
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/44ced8d2-79ed-4207-ad1d-1764585dc46c"
+      "url": "https://u.expo.dev/fa9bf858-2af3-4d4f-9658-4b2422d9bafc"
     }
   }
 }
